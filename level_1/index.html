@@ -6,7 +6,7 @@
 	<title>HTML-academy: level_1</title>
 </head>
 <body>
-	<nav>
+<!-- 	<nav>
 
 	</nav>
 	<H2>Лекция 2 РАЗМЕТКА</H2>
@@ -83,7 +83,7 @@
 							</ul>
 						<li>nav</li>
 							<ul>
-								<li>начение: навигационный раздел со ссылками на другие страницы или другие части страниц.</li>
+								<li>Значение: навигационный раздел со ссылками на другие страницы или другие части страниц.</li>
 								<li>Особенности: лучше использовать для основной навигации, а не для всех групп ссылок. Основной является</li>
 								<li>навигация или нет – на усмотрение верстальщика. Например, меню в футере можно не оборачивать в nav.</li>
 							</ul>
@@ -198,8 +198,8 @@
 				<li>Добавленный лейбл: <nav aria-label="Содержимое"></li>
 				<li>Скринридерам и переводчикам нужен <html lang="ru"> .</li>
 			</ul>
-
-	<h2>Лекция 5 !Введение в css</h2>
+ 
+	<h2>Лекция 5 Введение в css</h2>
 	<H3>план лекции:</H3>
 	<ol>
 		<li>Введение в CSS</li>
@@ -210,6 +210,122 @@
 		<li>Абсолютные или относительные?</li>
 		<li>Практика: базовая стилизация Барбершопа</li>
 	</ol>
-
 	<img src="/home/sim/study/projects/HTMLacademy/level_1/CSS_rul.png" alt="">
+
+		<h2>Название классов</h2>
+
+ -->
+<h2>Чекбоксы и переключатели</h2>
+
+	<section class="checkbos_switches">
+
+		<style>
+			.row {
+				display: flex;
+			}
+			
+			.col-lg-6{
+				display: table;
+				border: 1px solid #4d4d4d;
+				width: 500px;						
+			}
+		</style>
+
+		<div class="row">
+			<div class="col-lg-6">
+				<pre>
+					<code>&lt;label for="notify"&gt;переключить чекбокс&lt;/label&gt;</body><br>
+					<code>&lt;input type="checkbox" id="notyfy" name="notify" value="on"&gt;</code>
+				</pre>
+			</div>
+			<div class="col-lg-6">
+				<label for="notify">переключить чекбокс</label>
+				<input type="checkbox" id="notyfy" name="notify" value="on">
+			</div>
+		</div>
+
+		<div class="rodio">
+			<fieldset>
+				<legend>Уведомлять по почте</legend>
+				<input type="radio" id="notify-on" name="notify" value="on">
+				<label for="notify-on">включить</label>
+				<input type="radio" id="notify-off" name="notify" value="off" checked>
+				<label for="notify-off">выключить</label>
+			  </fieldset>
+		</div>
+
+		<div class="button">
+			<button type="button" aria-pressed="true">
+				Уведомление по почте
+			</button>
+		</div>
+
+		<div class="fieldset1">
+			<h2>Уведомления</h2>
+				<ul>
+				<li>
+					Уведомлять по почте
+					<button>
+					<span>вкл.</span>
+					<span>выкл.</span>
+					</button>
+				</li>
+				<li>
+					Уведомлять по SMS
+					<button>
+					<span>вкл.</span>
+					<span>выкл.</span>
+					</button>
+				</li>
+				<li>
+					Уведомлять по факсу
+					<button>
+					<span>вкл.</span>
+					<span>выкл.</span>
+					</button>
+				</li>
+				<li>
+					Уведомлять сигнальным огнём
+					<button>
+					<span>вкл.</span>
+					<span>выкл.</span>
+					</button>
+				</li>
+				</ul>
+		</div>
+		<div class="fielset2">
+			<h2>Уведомления</h2>
+			<ul>
+			  <li>
+				<span id="notify-email">Уведомлять по почте</span>
+				<button aria-labelledby="notify-email">
+				  <span">вкл.</span>
+				  <span>выкл.</span>
+				</button>
+			  </li>
+			  <li>
+				<span id="notify-sms">Уведомлять по SMS</span>
+				<button aria-labelledby="notify-sms">
+				  <span>вкл.</span>
+				  <span>выкл.</span>
+				</button>
+			  </li>
+			  <li>
+				<span id="notify-fax">Уведомлять по факсу</span>
+				<button aria-labelledby="notify-fax">
+				  <span>вкл.</span>
+				  <span>выкл.</span>
+				</button>
+			  </li>
+			  <li>
+				<span id="notify-smoke">Уведомлять сигнальным огнём</span>
+				<button aria-labelledby="notify-smoke">
+				  <span>вкл.</span>
+				  <span>выкл.</span>
+				</button>
+			  </li>
+			</ul>			
+		</div>
+	</section>
+
 </html>
