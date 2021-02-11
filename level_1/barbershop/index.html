@@ -16,142 +16,146 @@
 </head>
 <body>
 	<header class="main-header">
-		<nav class="main-navigation">
-			<ul class="site-navigation">
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="price.html">Прайс-лист</a></li>
-				<li><a href="#">Магазин</a></li>
-				<li><a href="#">Контакты</a></li>
+		<nav  class="main-header__navigation">
+			<ul class="main-header__navigation site-navigation">
+				<li class="site-navigation__link"><a href="#">Информация</a></li>
+				<li class="site-navigation__link"><a href="#">Новости</a></li>
+				<li class="site-navigation__link"><a href="price.html">Прайс-лист</a></li>
+				<li class="site-navigation__link"><a href="#">Магазин</a></li>
+				<li class="site-navigation__link"><a href="#">Контакты</a></li>
 			</ul>
-			<ul class="user-navigation">
-				<li>
+			<ul class="main-header__navigateion user-navigation">
+				<li class="user-navigation__link">
 					<a href="#">Вход</a>
 				</li>
 			</ul>
 		</nav>
-		<a class="main-header-logo">
+		<a  class="main-header__logo">
 			<img src="/img/svg/index-logo.svg" width="368" height="300" alt="Логотип Барбершопа «Бородинский»">
 		</a>
 	</header>
-	<main class="container">
+	<main class="main-container">
 		<h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
-		<section class="features">
+		<section class="feature">
 			<h2 class="visually-hidden">Приимущества</h2>
-			<ul class="features-list">
-				<li class="feature-item">
-					<h3>Быстро</h3>
-					<p>	МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО!<br>
+			<ul class="feature__list">
+				<li class="feature__item feature-item">
+					<h3 class="feature-item__title">Быстро</h3>
+					<p class="feature-item__text">
+						МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО!<br>
 						ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ<br>
 						ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
 				</li>
-				<li class="feature-item">
-					<h3>Круто</h3>
-					<p>	ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.<br>
+				<li class="feature__item feature-item">
+					<h3 class="feature-item__title">Круто</h3>
+					<p class="feature-item__text">
+						ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.<br>
 						МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!<br>
 						ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
 				</li>
-				<li class="feature-item">
-					<h3>Дорого</h3>
-					<p>	НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И<br>
+				<li class="feature__item feature-item">
+					<h3 class="feature-item__title">Дорого</h3>
+					<p class="feature-item__text">
+						НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И<br>
 						НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА<br>
 						НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
 				</li>
 			</ul>
+
+			<div class="wrapper-colums">
+				<section class="nwes">
+					<h2>Новости</h2>
+					<ul class="news__list">
+						<li class="news__item">
+							<p>
+								НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ<br>
+								ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
+							</p>
+							<time datetime="2021-02-03">03 февраля 2021</time>
+						</li>
+						<br>
+						<li class="news__item">
+							<p>
+								В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ,<br>
+								ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ<br>
+								СТРОЙНЫЕ РЯДЫ
+							</p>
+							<time datetime="2021-01-29">29 января 2021</time>
+						</li>
+					</ul>
+					<a class="button" href="#">Все новости</a>
+				</section>
+				<section class="galerey">
+					<h2>Фотогалерея</h2>
+					<figure class="gallery__content">
+						<a href="#">
+							<img src="img/foto_g.png" width="328" height="164" alt="Интерьер">
+						</a>
+					</figure>
+					<button class="button galery__button galery__button--back" type="button">Вперёд</button>
+					<button class="button galery__button galery__button--next" type="button">Назад</button>
+				</section>
+			</div>
+			<div class="wrapper-colums">
+				<section class="contacts">
+					<h2>Контактная информация</h2>
+						<p>БАРБЕРШОП «БОРОДИНСКИЙ»</p>
+						<p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8</p>
+						<p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+						<br>
+
+						<p>ВРЕМЯ РАБОТЫ:</p>
+						<p>ПН—ПТ: С 10:00 ДО 22:00</p>
+						<p>СБ—ВС: С 10:00 ДО 19:00</p>
+
+					<a class="button" href="#">Как проехать</a>
+					<a class="button" href="#">Обратная связь</a>
+				</section>
+				<section class="appointment">
+					<h2>Записаться</h2>
+					<p class="appointment__info">
+						УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
+					</p>
+					<form action="#" method="post">
+						<p class="appointment__item">
+							<label for="appointment-date">Дата</label>
+							<input id="appointment-date" type="date" name="date" value="2021-10-08">
+						</p>
+						<p class="appointment__item">
+							<label for="appointment-time">Время</label>
+							<input id="appointment-time" type="time" name="time" value="10:00">
+						</p>
+						<p class="appointment__item">
+							<label for="appointment-name">Ваше имя</label>
+							<input id="appointment-name" type="text" name="name" value="" placeholder="Иванов Иван">
+						</p>
+						<p class="appointment__item">
+							<label for="appointment-phone">Ваш телефон</label>
+							<input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7(921) 921-21-21">
+						</p>
+						<button class="button appoitment__button appointment__button--sent" type="submit">Отправить</button>
+					</form>
+				</section>
+			</div>
+
 		</section>
-		<div class="index-colums">
-			<section class="news">
-				<h2>Новости</h2>
-				<ul class="news-list">
-					<li class="news-item">
-						<p>
-							НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ<br>
-							ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ
-						</p>
-						<time datetime="2021-02-03">03 февраля 2021</time>
-					</li>
-					<br>
-					<li class="news-item">
-						<p>
-							В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ,<br>
-							ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ<br>
-							СТРОЙНЫЕ РЯДЫ
-						</p>
-						<time datetime="2021-01-29">29 января 2021</time>
-					</li>
-				</ul>
-				<a class="button" href="#">Все новости</a>
-			</section>
-			<section class="galerey">
-				<h2>Фотогалерея</h2>
-				<figure class="gallery-content">
-					<a href="#">
-						<img src="img/foto_g.png" width="328" height="164" alt="Интерьер">
-					</a>
-				</figure>
-				<button class="button galery-button galery-button-back" type="button">Вперёд</button>
-				<button class="button galery-button galery-button-next" type="button">Назад</button>
-			</section>
-		</div>
-		<div class="index-colums">
-			<section class="contacts">
-				<h2>Контактная информация</h2>
-					<p>БАРБЕРШОП «БОРОДИНСКИЙ»</p>
-					<p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8</p>
-					<p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
-					<br>
-
-					<p>ВРЕМЯ РАБОТЫ:</p>
-					<p>ПН—ПТ: С 10:00 ДО 22:00</p>
-					<p>СБ—ВС: С 10:00 ДО 19:00</p>
-
-				<a class="button" href="#">Как проехать</a>
-				<a class="button" href="#">Обратная связь</a>
-			</section>
-			<section class="appointment">
-				<h2>Записаться</h2>
-				<p class="appointment-info">
-					УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ
-				</p>
-				<!-- тут будет форма записи -->
-				<form action="#" method="post">
-					<p class="appointment-item">
-						<label for="appointment-date">Дата</label>
-						<input id="appointment-date" type="date" name="date" value="2021-10-08">
-					</p>
-					<p class="appointment-item">
-						<label for="appointment-time">Время</label>
-						<input id="appointment-time" type="time" name="time" value="10:00">
-					</p>
-					<p class="appointment-item">
-						<label for="appointment-name">Ваше имя</label>
-						<input id="appointment-name" type="text" name="name" value="" placeholder="Иванов Иван">
-					</p>
-					<p class="appointment-item">
-						<label for="appointment-phone">Ваш телефон</label>
-						<input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7(921) 921-21-21">
-					</p>
-					<button class="button appoitment-button appointment-button-sent" type="submit">Отправить</button>
-				</form>
-			</section>
-		</div>
 	</main>
-	<footer class="main-footer">
-		<p class="footer-contact">
+	<footer class="footer">
+		<p class="footer__contact">
 			Барбершоп «Бородинский»<br>
 			Адрес: г. Санкт-Петербург, Б. Конюшенная, д 19/8<br>
 			<a href="#">Как нас найти</a><br>
 			Телефон: +7 (812) 596-33-63
 		</p>
-		<div class="footer-social">
+		<div class="footer__social footer-social">
 			<p>Давайте дружить</p>
-			<ul class="social-list">
-				<li class="social-item"><a href="#"></a>Вконтакте</li>
-				<li class="social-item"><a href="#"></a>Фэйсбук</li>
-				<li class="social-item"><a href="#"></a>Инстаграм</li>
+			<ul class="footer-social__list">
+				<li class="footer-social__item"><a href="#"></a>Вконтакте</li>
+				<li class="footer-social__item"><a href="#"></a>Фэйсбук</li>
+				<li class="footer-social__item"><a href="#"></a>Инстаграм</li>
 			</ul>
 		</div>
-		<p class="footer-copyright"><b>Разработанно</b>
+		<p class="footer__copyright"><b>Разработанно</b>
 		<a class="button" href="#">DaoSima</a>
 		</p>
 	</footer>
@@ -188,6 +192,5 @@
 		</p>
 		<button class="modal-close" type="button">Закрыть</button>
 	</section>
-
 </body>
 </html>
