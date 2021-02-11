@@ -159,7 +159,7 @@
 			<div class="footer__contacts footer-contacts">
 				<h4 class="footer-contacts__title"></h4>
 				<p  class="footer-contacts__text"></p>
-				<button class="button footer-contacts__button"></button>
+				<button class="button footer-contacts__button" type="button">Напишите нам</button>
 			</div>
 		</div>
 		<div class="footer__social footer-social">
@@ -172,5 +172,23 @@
 		<h2 class="footer-social__title">Давайте дружить, это выгодно!</h2>
 		<p  class="footer-social__text">Скидка 10% для друзей из социальных сетей.</p>
 	</footer>
+	<section class="modal-mail">
+		<h2 class="modal-mail__title">Напишите нам</h2>
+		<form action="#" method="POST">
+			<p class="modal-mail__item">
+			<label for="modal-mail__name">Ваше имя:</label>
+			<input type="text" name="name" id="modal-mail__name" value="" placeholder="Иванов Иван">
+			</p>
+			<p class="modal-mail__item">
+				<label for="modal-mail__email">Ваше имя:</label>
+				<input type="email" name="email" id="modal-mail__email" value="" placeholder="Email@example.com">
+			</p>
+			<p class="modal-mail__item">
+				<label for="modal-mail__text">Ваше имя:</label>
+				<input type="text" name="text" id="modal-mail__text" value="" placeholder="Напишите нам в свободной форме">
+			</p>
+		</form>
+		<button class="button modal-mail__button" type="submit">Отправить</button>
+	</section>
 </body>
 </html>
