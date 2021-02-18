@@ -23,54 +23,71 @@
 		&__user-item-link
 			img
 				margin-right: 15px
-a
-	color: #ffffff
-	padding: 20px
-	a:hover, a:focus
-		background-color: #500000
+		&__site-item-link
+			color: #ffffff
+			padding: 20px
+			a:hover, a:focus
+				background-color: #500000
 
 .feature
 	&__list
+		display: flex
+		justify-content: space-around
 		list-style: none
+		padding: 0
 	&__item
 		text-align: center
+		width: 300px
 		.feature-item
 			&__title
 				font-size: 30px
 				line-height: 42px
-
+				font-weight: 700
+			&__text
+				text-align: center
 .wrapper-colums
+	display: flex
+	justify-content: space-around
+
+	padding: 50px 80px
+	margin-bottom: 35px
+
 	color: #000000
 	background-color: #f8f5f2
 	background-image: url("../img/pattern-light.png")
-	background-position: 0 0
+	background-position: center
 	background-repeat: no-repeat
 
-	h2
-		font-size: 30px
-		line-height: 42px
+	.news
+		width: 380px
+		&__list
+			list-style: none
+			padding: 0
+			margin: 0
+		&__item
+			time
+				text-transform: none
+	.gallery
+		width: 300px
+		display: flex
+		justify-content: space-between
+		&__content
+			background-color: #cccccc
+			border: 7px solid #ffffff
 
-.news
-	&__list
-		list-style: none
-	&__item
-		time
-			text-transform: none
+	.contacts
 
-.gallery__content
-		background-color: #cccccc
-		border: 7px solid #ffffff
+	.appointment
 
-.appointment
-	&__item
-		input
-			font: inherit
-			background-color: trandparent
-			border: 2px solid #000000
-			&:focus
-				border-color: #3dfd24
-			&:hover
-				border-color: #4b5dfd
+		&__item
+			input
+				font: inherit
+				background-color: trandparent
+				border: 2px solid #000000
+				&:focus
+					border-color: #3dfd24
+				&:hover
+					border-color: #4b5dfd
 
 .footer
 	color: #ffffff
