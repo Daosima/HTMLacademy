@@ -1,6 +1,6 @@
 .main-header
 
-	&__navigation
+	.main-navigation
 		margin-bottom: 75px
 		display: flex
 		width: 100%
@@ -11,16 +11,16 @@
 
 		background-color: #000000
 
-		& .site-navigation, .user-navigation
+		&__site-list, &__user-list
 			list-style: none
 			margin-top: 30px
-			&__link,
-				float: left
-			a
-				color: #ffffff
-				padding: 20px
-			a:hover, a:focus
-				background-color: #242424
+		&__site-item, &__user-item
+			float: left
+a
+	color: #ffffff
+	padding: 20px
+	a:hover, a:focus
+		background-color: #500000
 
 .feature
 	&__list
