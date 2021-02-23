@@ -1,38 +1,48 @@
 .main-header
 	display: flex
-	flex-direction: column-reverse
+	flex-direction: column
 	align-items: center
 	margin-bottom: 75px
 
+	.main-header-logo
+		order: 2
 	.main-navigation
 		display: flex
 		justify-content: center
+		margin-bottom: 60px
 		width: 100%
 		min-height: 46px
 		font-size: 16px
 		line-height: 20px
 		color: #ffffff
-
 		background-color: #000000
 
+		.main-navigation-wrapper
+			width: 100%
+			.container
+				width: 940px
+				display: flex
+				justify-content: space-between
+				align-content: center
 		&__site-list, &__user-list
 			list-style: none
-			margin-top: 30px
+			margin: 30px 0 30px 0
 		&__site-item, &__user-item
 			float: left
 		&__user-item-link
 			img
 				margin-right: 15px
-		&__site-item-link
+		&__site-item-link, &__user-item-link
 			color: #ffffff
 			padding: 20px
 			a:hover, a:focus
 				background-color: #500000
 
 .feature
+	margin-bottom: 80px
 	&__list
 		display: flex
-		justify-content: space-around
+		justify-content: space-between
 		list-style: none
 		padding: 0
 	&__item
@@ -47,7 +57,7 @@
 				text-align: center
 .wrapper-colums
 	display: flex
-	justify-content: space-around
+	justify-content: space-between
 
 	padding: 50px 80px
 	margin-bottom: 35px
@@ -90,26 +100,45 @@
 					border-color: #4b5dfd
 
 .footer
+	padding: 60px 0
+	margin-top: 65px
+
 	color: #ffffff
 	background-color: #212121
 	background-image: url(../img/footer_bg.png)
 	background-position: 0 0
 	background-repeat: no-repeat
+	.container
+		.footer-wrapper
+			display: flex
+			justify-content: space-between
 
 	&__contact
+		width: 300px
 		a
 			color: #ffffff
 			text-decoration: underline
 			&:focus, &:hover
 				text-decoration: none
 	&__social
+		width: 145px
 		.footer-social
+			display: flex
+			align-items: center
 			&__list
+				display: flex
+				align-items: center
 				text-align: center
 				list-style: none
 			&__item
 				color: #ffffff
+				width: 43px
+				height: 43px
+				background-color: #000000
+				margin: 6px
+
 	&__copyright
+		width: 140px
 		text-align: center
 		a
 			text-transform: none
