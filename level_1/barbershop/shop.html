@@ -11,33 +11,37 @@
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.min.css">
-	<link rel="shortcut icon" href="../../../favicon.png" type="image/x-icon">
 
 </head>
 <body>
-	<header class="main-header">
-		<nav  class="main-header__navigation">
-			<ul class="main-header__navigation site-navigation">
-				<li class="site-navigation__link">
-					<a  class="main-header__logo">
-						<img src="/img/svg/logo.svg" width="111" height="24" alt="Логотип Барбершопа «Бородинский»">
-					</a>
-				</li>
-				<li class="site-navigation__link"><a href="#">Информация</a></li>
-				<li class="site-navigation__link"><a href="#">Новости</a></li>
-				<li class="site-navigation__link"><a href="price.html">Прайс-лист</a></li>
-				<li class="site-navigation__link link--active"><a href="shop.html">Магазин</a></li>
-				<li class="site-navigation__link"><a href="#">Контакты</a></li>
-			</ul>
-			<ul class="main-header__navigation user-navigation">
-				<li class="user-navigation__link">
-					<a href="#">Вход</a>
-				</li>
-			</ul>
+	<header class="shop-header">
+		<nav class="shop-navigation">
+			<div class="shop-navigation-wrapper">
+				<div class="container">
+					<ul class="shop-navigation__site-list">
+						<li class="shop-navigation__site-item">
+							<a class="shop-navigation__site-item-link" href="#">
+								<img src="/img/svg/logo.svg" alt="Логотип Барбершопа «Бородинский»">
+							</a></li>
+						<li class="shop-navigation__site-item"><a class="shop-navigation__site-item-link" href="#">Информация</a></li>
+						<li class="shop-navigation__site-item"><a class="shop-navigation__site-item-link"href="#">Новости</a></li>
+						<li class="shop-navigation__site-item"><a class="shop-navigation__site-item-link"href="#">Прайс-лист</a></li>
+						<li class="shop-navigation__site-item"><a class="shop-navigation__site-item-link"href="#">Магазин</a></li>
+						<li class="shop-navigation__site-item"><a class="shop-navigation__site-item-link"href="#">Контакты</a></li>
+					</ul>
+					<ul class="shop-navigation__user-list">
+						<li class="shop-navigation__user-item">
+							<a class="shop-navigation__user-item-link" href="#">
+								<img src="/img/enter.png" width="14" height="14" alt="">Вход
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 	</header>
 	<main>
-		<div class="main-header">
+		<div class="shop-header">
 			<h2>СРЕДСТВА ДЛЯ УХОДА</h2>
 				<ol class="breadcrumbs">
 					<li class="breadcrumbs__item">
@@ -50,44 +54,43 @@
 						<a class="breadcrumbs__link breadcrumbs__link--active" href="#">СРЕДСТВА ДЛЯ УХОДА</a></li>
 				</ol>
 		</div>
-		<div class="container">
 			<aside>
-				<box>
-					<p>ПРОИЗВОДИТЕЛИ:</p>
-					<ul>
-						<li><input class="" type="checkbox" name="select" id="select" value="on"></li>
+				<section class="manufacturer">
+					<p class="manufacturer__header">ПРОИЗВОДИТЕЛИ:</p>
+					<ul class="manufacturer__list">
+						<li class="manufacturer__item"><input class="" type="checkbox" name="select" id="select" value="on"></li>
 						<label for="select">Baxter of California</label>
 
-						<li><input class="" type="checkbox" name="select" id="select" value="off"></li>
+						<li class="manufacturer__item"><input class="" type="checkbox" name="select" id="select" value="off"></li>
 						<label for="select">Mr Natty</label>
 
-						<li><input class="" type="checkbox" name="select" id="select" value="on"></li>
+						<li class="manufacturer__item"><input class="" type="checkbox" name="select" id="select" value="on"></li>
 						<label for="select">Suavecito</label>
 
-						<li><input class="" type="checkbox" name="select" id="select" value="off"></li>
+						<li class="manufacturer__item"><input class="" type="checkbox" name="select" id="select" value="off"></li>
 						<label for="select">Malin+Goetz</label>
 
-						<li><input class="" type="checkbox" name="select" id="select" value="off"></li>
+						<li class="manufacturer__item"><input class="" type="checkbox" name="select" id="select" value="off"></li>
 						<label for="select">Murray’s</label>
 
-						<li><input class="" type="checkbox" name="select" id="select" value="on"></li>
+						<li class="manufacturer__item"><input class="" type="checkbox" name="select" id="select" value="on"></li>
 						<label for="select">American Crew</label>
 					</ul>
-				</box>
-				<box>
-					<p>ГРУППЫ ТОВАРОВ:</p>
-					<ul>
-						<li><input type="radio" name="select-googs" id="select-googs" value="off">
+				</section>
+				<bsection class="group-goods">
+					<p class="group-goods__header">ГРУППЫ ТОВАРОВ:</p>
+					<ul class="group-goods__list">
+						<li class="group-goods__item"><input type="radio" name="select-googs" id="select-googs" value="off">
 							<label for="select-googs">Бритвенные принадлежности
 							</label></li>
-						<li><input type="radio" name="select-googs" id="select-googs" value="on">
+						<li class="group-goods__item"><input type="radio" name="select-googs" id="select-googs" value="on">
 							<label for="select-googs">Средства для ухода
 							</label></li>
-						<li><input type="radio" name="select-googs" id="select-googs" value="off">
+						<li class="group-goods__item"><input type="radio" name="select-googs" id="select-googs" value="off">
 							<label for="select-googs">Аксессуары
 							</label></li>
 					</ul>
-				</box>
+				</bsection>
 			</aside>
 			<div class="goods">
 				<ul class="goods__list">
@@ -159,7 +162,7 @@
 					<li>4</li>
 				</ul>
 			</div>
-		</div>
+
 	</main>
 
 	<footer class="footer">
