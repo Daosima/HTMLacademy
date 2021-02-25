@@ -9,6 +9,7 @@
 	.main-navigation
 		display: flex
 		justify-content: center
+		flex-wrap: wrap
 		margin-bottom: 60px
 		width: 100%
 		min-height: 46px
@@ -24,17 +25,39 @@
 				display: flex
 				justify-content: space-between
 				align-content: center
+
+
 		&__site-list, &__user-list
 			list-style: none
-			margin: 30px 0 30px 0
+			margin: 0
+			padding: 0
 		&__site-item, &__user-item
 			float: left
+		&__user-list
+			position: relative
+		&__user-item-link::before
+			content: ""
+			position: absolute
+			top: 27px
+			right: 84px
+
+			width: 16px
+			height: 18px
+
+			background-image: url(../img/svg/login.svg)
+			background-repeat: no-repeat
+			background-position: 0 0
+
+			opacity: 0.3
 		&__user-item-link
-			img
-				margin-right: 15px
+			&:hover::before, &:focus::before, &:active::before
+				opacity: 1
+
+
 		&__site-item-link, &__user-item-link
+			display: block
+			padding: 25px 35px
 			color: #ffffff
-			padding: 20px
 			a:hover, a:focus
 				background-color: #500000
 
@@ -50,9 +73,25 @@
 		width: 300px
 		.feature-item
 			&__title
+				position: relative
+				margin-bottom: 60px
 				font-size: 30px
 				line-height: 42px
 				font-weight: 700
+				&::after
+					content: ""
+					position: absolute
+					bottom: -30px
+					left: 50%
+					margin-left: -10px
+
+					width: 20px
+					height: 20px
+
+					background-color: #ffffff
+
+					transform: rotate(45deg)
+
 			&__text
 				text-align: center
 .wrapper-colums
