@@ -204,37 +204,49 @@
 			justify-content: space-between
 
 	&__contact
-		width: 320px
-		margin-left: 80px
+		width: 307px
 		a
 			color: #ffffff
 			text-decoration: underline
 			&:focus, &:hover
 				text-decoration: none
 	&__social
-		width: 145px
+		display: flex
+		flex-direction: column
+		text-align: center
+
 		.footer-social
-			display: flex
-			align-items: center
 			&__list
 				display: flex
-				align-items: center
+				flex-wrap: wrap
 				text-align: center
 				list-style: none
+				padding: 0
+				margin: 0
 			&__item
 				color: #ffffff
 				width: 43px
 				height: 43px
 				background-color: #000000
 				margin: 6px
+				padding-top: 8px
 
 	&__copyright
-		width: 150px
-		margin: 0
-		margin-left: auto
+		display: flex
+		flex-direction: column
 		text-align: center
+		padding: 0
+		margin: 0
+		p
+			padding: 0
+			margin: 0
 		a
 			text-transform: none
+			align-items: center
+			padding-top: 8px
+			margin: 0
+			width: 140px
+			height: 43px
 .modal
 	color: #000000
 
