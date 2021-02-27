@@ -91,9 +91,9 @@
 					background-color: #ffffff
 
 					transform: rotate(45deg)
-
 			&__text
 				text-align: center
+				margin: 0 10px
 .wrapper-colums
 	display: flex
 	justify-content: space-between
@@ -104,8 +104,12 @@
 	color: #000000
 	background-color: #f8f5f2
 	background-image: url("../img/pattern-light.png")
+	background-image: url("../img/line.png")
 	background-position: center
 	background-repeat: no-repeat
+
+	h2
+		margin-bottom: 35px
 
 	.news
 		width: 380px
@@ -114,20 +118,52 @@
 			padding: 0
 			margin: 0
 		&__item
+			margin-bottom: 27px
+			p
+				margin: 0
 			time
 				text-transform: none
+
 	.gallery
 		width: 300px
-		display: flex
-		justify-content: space-between
+		height: 178px
+		margin: 0
+
+		border: 7px solid #ffffff
+		&__button--wrap
+			position: relative
+			width: 100%
+			// display: flex
+			// flex-wrap: wrap
+			// justify-content: space-between
+		&__button
+			position: absolute
+			width: 140px
+			margin: 0
+			top: 30px
+
+			// margin-bottom: 20px
+		&__button--back
+			left: 0
+		&__button--next
+			right: 0
 		&__content
 			background-color: #cccccc
 			border: 7px solid #ffffff
-
 	.contacts
+		p
+			margin: 0
+		&__button
+			margin: 28px 20px 0 0
+
 
 	.appointment
-
+		&__wrap
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			padding-top: 10px
+			padding-bottom: 30px
 		&__item
 			input
 				font: inherit

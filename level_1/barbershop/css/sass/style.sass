@@ -1,4 +1,4 @@
-@import "mainpage.sass"
+@import "index.sass"
 @import "shop.sass"
 
 body
@@ -47,10 +47,12 @@ ul, ol
 	overflow: hidden
 
 .button
+	display: inline-block
 	font: inherit
 
-	padding: 0
-	margin: 0
+	padding: 10px 30px
+	margin-right: 16px
+
 	text-align: center
 	color: #ffffff
 	vertical-align: middle
@@ -60,9 +62,15 @@ ul, ol
 	border: 2px solid #000000
 
 	&:hover, &:focus, &:active
-		background-color: #ffffff
-		color: #000000
+		background-color: #663d15
+		color: #ffffff
 		border: 2px solid #000000
+
+	&.disabled
+		cursor: default
+		opacity: 0.5
+		background-color: #000000
+
 .container
 	width: 940px
 
