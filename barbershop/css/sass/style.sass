@@ -138,7 +138,11 @@ ul, ol
 .main-shop
 	padding-top: 65px
 	background-color: #f9f6f3
+	.wrap
+		display: flex
+
 	.header-shop
+		margin-bottom: 40px
 	.breadcrumbs
 		position: relative
 		display: flex
@@ -162,4 +166,49 @@ ul, ol
 			color: #000000
 		&__link--active
 			color: #b5b3b1
+
+aside
+	min-width: 170px
+	margin: 0
+	padding: 0
+
+	.manufacturer
+		&__header
+			font-size: 24px;
+			line-height: 30px;
+			margin-bottom: 37px
+		&__list
+			padding: 0
+		&__item
+			input[type=checkbox]
+				transform: scale(1.5)
+			label
+				padding-left: 23px
+				line-height: 18px
+				margin-bottom: 17px
+
+	.group-goods
+		&__header
+			font-size: 24px;
+			line-height: 30px;
+		&__list
+				padding: 0
+		&__item
+			input[type=radio]
+				transform: scale(1.5)
+			label
+				padding-left: 23px
+				line-height: 18px
+				margin-bottom: 17px
+
+.goods
+	&__list
+		display: flex
+		flex-wrap: wrap
+
+	&__item
+		a
+			img
+	h4
+	p
 
