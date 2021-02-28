@@ -138,12 +138,28 @@ ul, ol
 .main-shop
 	padding-top: 65px
 	background-color: #f9f6f3
-
+	.header-shop
 	.breadcrumbs
+		position: relative
 		display: flex
+		padding: 0
+		&__item--decor
+			padding-right: 40px
+		&__item--decor::after
+			content: ""
+			position: absolute
 
-		&__item
-			padding-right: 14px
+			top: 8px
+
+			width: 8px
+			height: 8px
+
+			background-color: #000000
+			transform: translateX(15px) rotate(45deg)
+
+
 		&__link
 			color: #000000
+		&__link--active
+			color: #b5b3b1
 
