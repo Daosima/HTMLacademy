@@ -76,3 +76,66 @@ ul, ol
 
 
 
+// sass shop
+
+.shop-header, .main-shop, .shop-footer
+	color: #000000
+
+
+.shop-navigation
+	background-color: #000000
+	.container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		min-height: 70px
+	&__site-list
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
+		margin: 0
+		padding: 0
+		min-width: 656px
+	&__site-item
+		a
+			color: #ffffff
+	&__user-list
+		flex-wrap: wrap
+		margin: 0
+		padding: 0
+
+	&__user-item
+		position: relative
+		a
+			color: #ffffff
+
+	&__user-item-link::before
+			content: ""
+			position: absolute
+			top: 25px
+			right: 75px
+
+			width: 16px
+			height: 18px
+			padding: 0px
+
+			background-image: url(../img/svg/login.svg)
+			background-repeat: no-repeat
+			background-position: 0 0
+
+			opacity: 0.3
+	&__user-item-link
+		&:hover::before, &:focus::before, &:active::before
+			opacity: 1
+
+	&__site-item-link, &__user-item-link
+		display: block
+		padding: 20px
+		color: #ffffff
+		a:hover, a:focus
+			background-color: #500000
+
+.main-shop
+	padding-top: 65px
+	background-color: #f9f6f3
+
